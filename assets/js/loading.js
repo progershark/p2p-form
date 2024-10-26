@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Скрываем загрузочный экран после загрузки страницы
     window.addEventListener('load', () => {
-        loadingSection.remove();
+        loadingSection.style.display = 'none';
         document.body.style.overflow = 'inherit';
     });
 });
