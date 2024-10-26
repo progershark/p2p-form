@@ -133,7 +133,7 @@ input::-webkit-inner-spin-button {
 @media screen and (max-width: 991px) {
     .c-header-stages {
         max-width: 380px;
-        justify-content: flex-end;
+        justify-content: space-between;
         padding: 20px 0;
     }
 }
@@ -347,9 +347,22 @@ input::-webkit-inner-spin-button {
     right: 0;
 }
 
+.c-header-stages-logo:first-of-type {
+    display: none;
+}
+
 @media screen and (max-width: 991px) {
     .c-header-stages-logo {
         position: relative;
+    }
+
+    .c-header-stages-logo:first-of-type {
+        display: block;
+        max-width: 100px;
+    }
+
+    .c-header-stages-logo:first-of-type img {
+        width: 100%;
     }
 }
 
@@ -783,6 +796,16 @@ input::-webkit-inner-spin-button {
 @media screen and (max-width: 991px) {
     .c-logo {
         display: none;
+    }
+
+    .loadingItem .c-logo {
+        display: flex;
+        padding: 20px;
+        max-width: 393px;
+    }
+
+    .loadingItem .c-logo img {
+        max-width: 100px;
     }
 }
 
