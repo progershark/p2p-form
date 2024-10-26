@@ -999,6 +999,12 @@ input::-webkit-inner-spin-button {
     visibility: hidden;
 }
 
+@media screen and (max-width: 991px) {
+    .c-modal--popup-copy {
+        width: calc(100% - 20px * 2);
+    }
+}
+
 .c-modal--popup-copy.visible {
     opacity: 1;
     transform: translateY(0);
